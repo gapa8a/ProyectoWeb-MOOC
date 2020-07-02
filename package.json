@@ -1,0 +1,19 @@
+{
+  "name": "proyectoweb-mooc",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de node js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gapa8a/ProyectoWeb-MOOC.git"
+  },
+  "author": "Germán Parra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gapa8a/ProyectoWeb-MOOC/issues"
+  },
+  "homepage": "https://github.com/gapa8a/ProyectoWeb-MOOC#readme"
+}
