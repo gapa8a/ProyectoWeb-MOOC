@@ -1,0 +1,28 @@
+.jumbotron {
+    background-color:yellowgreen;
+    color: black;
+}
+
+footer{
+    padding: 10px 10px 0 10px;
+    background-color: yellowgreen;
+    margin-bottom: 0px;
+    margin-top: 10p;
+}
+
+.card-curso{
+flex: 1 150px; 
+padding: 2px  5px 2px 5px;
+margin-top: 10px;
+
+}
+.btn-iniciar{
+    width: 100%;
+    
+
+}
+.btn-infoaqui{
+    width: 100%;
+   
+
+}
