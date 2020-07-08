@@ -40,24 +40,58 @@
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item" ><a href="./index.html" >Home</a></li>
+              <li class="breadcrumb-item" ><a href="./index.html" >Inicio</a></li>
               <li class="breadcrumb-item active" aria aria-current="page">Contacto</li>
             </ol>
           </nav>
-          <h3><p>¿Dónde puedo conseguirlo?</p></h3>
-         <p> 
-            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, 
-            pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, 
-            o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de 
-            Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio 
-            del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir 
-            trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) 
-            en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con 
-            estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. 
-            Este Lorem Ipsum generado siempre estará libre de repeticiones,
-             humor agregado o palabras no características del lenguaje, etc.</p>
-    
-  
+         <h3>Comentanos:</h3> 
+         <form>
+          <div class="form-row">
+            <div class="form-group col-sm-6">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="apellido">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+            </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+            </div>
+          
+          <div class="form-row">
+            <div class="form-group col-sm-9">
+              <label for="direccion">Dirección</label>
+              <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
+            </div>
+            <div class="form-group col-sm-3">
+              <label for="departamento">Departamento</label>
+              <select id="departamento" class ="form-control">
+                <option> Antioquia</option>
+                <option>Atlántico</option>
+                <option>Bolivar</option>
+                <option selected>Distrito Capital</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="comentario">Comentario</label>
+            <textarea id="comentario" class="form-control" rows="10"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+              Deseo ser contactado
+            </label>
+            </div>
+            <checkbox></checkbox>
+          </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+         </form>
+        </div>
     </div>
    
     
