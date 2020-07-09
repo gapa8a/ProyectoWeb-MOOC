@@ -30,3 +30,11 @@ margin-top: 10px;
 .footer-addres-icon{
     padding-right: 10px; ;
 }
+.card-img-banner{
+    width: 400px ;
+    height: 200px;
+}
+.card-img-top{
+    width: 64px ;
+    height: 64px;
+}
