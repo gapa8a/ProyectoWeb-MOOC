@@ -31,10 +31,14 @@ margin-top: 10px;
     padding-right: 10px; ;
 }
 .card-img-banner{
-    width: 400px ;
-    height: 200px;
+    width: 50% ;
+    height: 100%;
+    display: block;
+    margin: auto;
 }
 .card-img-top{
     width: 64px ;
     height: 64px;
+    display: block;
+    margin: auto;
 }
