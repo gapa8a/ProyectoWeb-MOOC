@@ -46,64 +46,133 @@
               <li class="breadcrumb-item active" aria aria-current="page">Precios</li>
             </ol>
           </nav>
-         <div class="table-responsive">
-           <table class="table table-striped">
-              <thead class="thead-dark">
-                <th>Calificación</th>
-                <th>Barranquilla</th>
-                <th>Bogotá D.C</th>
-                <th>Cali</th>
-                <th>Pereira</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="oi oi-star"></span> </td>
-                  <td>$50.000 </td>
-                  <td>$80.000 </td>
-                  <td>$100.000 </td>
-                  <td>$120.000 </td>
-                </tr>
-                <tr>
-                  <td><span class="oi oi-star"></span>
-                    <span class="oi oi-star"></span> </td>
-                  <td>$150.000 </td>
-                  <td>$180.000 </td>
-                  <td>$200.000 </td>
-                  <td>$220.000 </td>
-                </tr>
-                <tr>
-                  <td><span class="oi oi-star"></span>
-                    <span class="oi oi-star"></span>
-                    <span class="oi oi-star"></span> </td>
-                  <td>250.000 </td>
-                  <td>280.000 </td>
-                  <td>$300.000 </td>
-                  <td>$320.000 </td>
-                </tr>
-                <tr>
-                  <td><span class="oi oi-star"></span>
-                    <span class="oi oi-star"></span>
-                    <span class="oi oi-star"></span>
-                    <span class="oi oi-star"></span> </td>
-                  <td>$350.000 </td>
-                  <td>$380.000 </td>
-                  <td>$400.000 </td>
-                  <td>$420.000 </td>
-                </tr>
-                <tr>
-                  <td><span class="oi oi-star"></span>
-                    <span class="oi oi-star"></span>
-                    <span class="oi oi-star"></span>
-                    <span class="oi oi-star"></span>
-                    <span class="oi oi-star"></span></td>
-                  <td>$450.000 </td>
-                  <td>$480.000 </td>
-                  <td>$500.000 </td>
-                  <td>$520.000 </td>
-                </tr>
-              </tbody>
-           </table>
+
+          <ul class="nav nav-tabs" id="myTab" role ="tablist"> <!-- Se pueden cambiar las tabs por pills , se cambia en class  y en el role de cada tag a   -->
+            <li class="nav-item">
+              <a class="nav-link active" id="comparar-tab" data-toggle="tab" href="#comparar" role="tab" aria-controls="comparar" aria-selected="true">Comparar</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a> 
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a> 
+              </li>
+
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id ="comparar" role="tabpanel" aria-labelledby="comparar-tab">
+              <div class="table-responsive tab">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                      <th>Calificación</th>
+                      <th>Barranquilla</th>
+                      <th>Bogotá D.C</th>
+                      <th>Cali</th>
+                      <th>Pereira</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span class="oi oi-star"></span> </td>
+                        <td>$50.000 </td>
+                        <td>$80.000 </td>
+                        <td>$100.000 </td>
+                        <td>$120.000 </td>
+                      </tr>
+                      <tr>
+                        <td><span class="oi oi-star"></span>
+                          <span class="oi oi-star"></span> </td>
+                        <td>$150.000 </td>
+                        <td>$180.000 </td>
+                        <td>$200.000 </td>
+                        <td>$220.000 </td>
+                      </tr>
+                      <tr>
+                        <td><span class="oi oi-star"></span>
+                          <span class="oi oi-star"></span>
+                          <span class="oi oi-star"></span> </td>
+                        <td>250.000 </td>
+                        <td>280.000 </td>
+                        <td>$300.000 </td>
+                        <td>$320.000 </td>
+                      </tr>
+                      <tr>
+                        <td><span class="oi oi-star"></span>
+                          <span class="oi oi-star"></span>
+                          <span class="oi oi-star"></span>
+                          <span class="oi oi-star"></span> </td>
+                        <td>$350.000 </td>
+                        <td>$380.000 </td>
+                        <td>$400.000 </td>
+                        <td>$420.000 </td>
+                      </tr>
+                      <tr>
+                        <td><span class="oi oi-star"></span>
+                          <span class="oi oi-star"></span>
+                          <span class="oi oi-star"></span>
+                          <span class="oi oi-star"></span>
+                          <span class="oi oi-star"></span></td>
+                        <td>$450.000 </td>
+                        <td>$480.000 </td>
+                        <td>$500.000 </td>
+                        <td>$520.000 </td>
+                      </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            <div class ="tab-pane" id ="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+              <div class="accordion" id ="accordionTarjetas">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        Ejemplo 1
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                    <div class="card-body">
+                      Ejemplo 1 probando
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                        Ejemplo 2
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                    <div class="card-body">
+                      Ejemplo 2 probando
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                        Ejemplo 3
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+                    <div class="card-body">
+                      Ejemplo 3  probando
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div> 
+           
+            <div class ="tab-pane" id ="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">comentarios</div>
+
           </div>
+          
     
   
     </div>
