@@ -57,7 +57,7 @@
     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#duracion" aria-expanded="false" aria-controls="multiCollapse2">¿Cuánto duran los cursos?</button>
 </div>
 <div class="col-sm-4">
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ejemplo" aria-expanded="false" aria-controls="multiCollapse3">Ejemplot 3</button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ejemplo" aria-expanded="false" aria-controls="multiCollapse3">Ejemplo 3</button>
 </div>
 </div>
 <div class="row">
@@ -169,11 +169,37 @@
           <img class="card-img-top img-fluid" src="images/contacto.png" alt="Banner imagen" >
 
           <h4 class="card-title"><p>Contactenos</p></h4>
-          <div> <a class="btn  btn-primary btn-iniciar" href="#" role="button">Aquí</a></div>
+          <div> <a class="btn  btn-primary btn-iniciar" role="button" data-toggle="modal" data-target="#contacto">Aquí</a></div>
         </div>
       </div>
-</div>
-   
+  </div>
+    <div class="modal fade" id ="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div  class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Tu email:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <input type="text" class="form-control" id="message-text">
+              </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-succes">Enviar</button>
+        </div>
+        </div>
+      </div>
+    </div>
     
   </div>
   <footer>
