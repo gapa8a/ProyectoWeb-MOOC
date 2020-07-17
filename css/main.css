@@ -31,8 +31,8 @@ margin-top: 10px;
     padding-right: 10px; ;
 }
 .card-img-banner{
-    width: 50% ;
-    height: 100%;
+    width: 30% ;
+    height: 60%;
     display: block;
     margin: auto;
 }
@@ -44,4 +44,8 @@ margin-top: 10px;
 }
 .tab-content{
     padding-top: 10px ;
+}
+.carouser-inner{
+    display: block;
+    margin: auto;
 }
