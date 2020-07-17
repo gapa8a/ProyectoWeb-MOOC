@@ -86,16 +86,17 @@
        
       <div class= "card card-curso d-flex flex-column justify-content-between ml-2">
         <!--<div class="card-header"><h4 class="card-title"><p>Cursos de programación:</p></h4></div>-->
+         <!---->
         <div class="card-body">
           <img class="card-img-top img-fluid " src="images/cod.png" alt="Banner imagen" >
           
 
-          <h4 class="card-title"><p>Cursos de programación:</p></h4>
+          <h4 class="card-title" data-toggle="popover" data-placement="auto" title="Cursos que permitiran desarrollar logica a una persona para que logre escribir codigos de software en diferentes lenguajes de programación."><p>Cursos de programación:</p></h4>
           <h5 class="card-subtitle text-muted"><p> Prof.Laura</p></h5>
           <p>Introducción a la programación con c++</p>
           <div> <a class="btn  btn-primary btn-iniciar" href="#" role="button">Iniciar</a></div>
           <div> <p>Programación Orientada a objetos con c++</p></div>
-          <div><a class="btn  btn-primary btn-iniciar" href="#" role="button">Iniciar</a></div>
+          <div><a class="btn  btn-primary btn-iniciar"  href="#" role="button">Iniciar</a></div> <!-- Para hacer funcionar popovers data-toggle="popover" data-content="Inicia un curso de programación"-->
         </div>
         </div>
 
@@ -103,7 +104,7 @@
         <div class="card-body">
           <img class="card-img-top" src="images/db.png" alt="Banner imagen" >
 
-          <h4 class="card-title"><p>Cursos de Base de datos:</p></h4>
+          <h4 class="card-title" data-toggle="popover" data-placement="auto" title="Cursos que enseñan tecnicas de recopilacion de datos pertenecientes a un mismo contexto con la ayuda de diferentes gestores de bases de datos."><p>Cursos de Base de datos:</p></h4>
           <h5 class="card-subtitle text-muted"><p> Prof.Freddy</p></h5>
           <p>Introducción a bases de datos</p>
           <div> <a class="btn  btn-primary btn-iniciar" href="#" role="button">Iniciar</a></div>
@@ -116,7 +117,7 @@
             <div class="card-body">
               <img class="card-img-top img-fluid" src="images/elc.png" alt="Banner imagen" >
 
-              <h4 class="card-title"><p>Circuitos digitales:</p></h4>
+              <h4 class="card-title" data-toggle="popover" data-placement="auto" title="Cursos que permiten comprender circuitos digitales desde la logica binaria hasta circuitos complejos."><p>Circuitos digitales:</p></h4>
               <h5 class="card-subtitle text-muted"><p> Prof.Gloria</p></h5>
               <p>Introducción a Circuitos</p>
               <div> <a class="btn  btn-primary btn-iniciar" href="#" role="button">Iniciar</a></div>
@@ -130,7 +131,7 @@
             <div class="card-body">
               <img class="card-img-top" src="images/codweb.png" alt="Banner imagen" >
 
-              <h4 class="card-title"><p>Programación Web:</p></h4>
+              <h4 class="card-title" data-toggle="popover" data-placement="auto" title="Cursos enfocados en enseñar el conjunto de tecnologias que permiten la creación de páginas web."><p>Programación Web:</p></h4>
               <h5 class="card-subtitle text-muted"><p> Prof.Cesar</p></h5>
               <p>Introducción la programación Web</p>
               <div> <a class="btn  btn-primary btn-iniciar" href="#" role="button">Iniciar</a></div>
@@ -143,7 +144,7 @@
             <div class="card-body">
               <img class="card-img-top img-fluid" src="images/os.png" alt="Banner imagen" >
 
-              <h4 class="card-title"><p>Sistemas Operativos:</p></h4>
+              <h4 class="card-title" data-toggle="popover" data-placement="auto" title="Cursos que enseñan los aspectos basicos del software principal de cualquier equipo de computación encargado de administrar el mismo ( computador , smartphone , celular , etc.)."><p>Sistemas Operativos:</p></h4>
               <h5 class="card-subtitle text-muted"><p> Prof.Jaime</p></h5>
               <p>Introducción a linea de comandos</p>
               <div> <a class="btn  btn-primary btn-iniciar" href="#" role="button">Iniciar</a></div>
@@ -159,7 +160,7 @@
       <div class= "card card-curso d-flex flex-column justify-content-between ml-2">
         <div class="card-body">
           <img class="card-img-top img-fluid" src="images/about.png" alt="Banner imagen" >
-          <h4 class="card-title"><p>Acerca de nosotros</p></h4>
+          <h4 class="card-title" data-toggle="popover" data-placement="auto" title="Acceda a información acerca del proyecto."><p>Acerca de nosotros</p></h4>
           <div> <a class="btn  btn-primary btn-iniciar" href="#" role="button">Información</a></div>
           
         </div>
@@ -168,7 +169,7 @@
         <div class="card-body">
           <img class="card-img-top img-fluid" src="images/contacto.png" alt="Banner imagen" >
 
-          <h4 class="card-title"><p>Contactenos</p></h4>
+          <h4 class="card-title" data-toggle="popover" data-placement="auto" title="Puedes dejarnos tu mensaje y tu correo para que te contactemos."><p>Contactenos</p></h4>
           <div> <a class="btn  btn-primary btn-iniciar" role="button" data-toggle="modal" data-target="#contacto">Aquí</a></div>
         </div>
       </div>
@@ -195,7 +196,7 @@
         </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-succes">Enviar</button>
+          <button type="button" class="btn btn-succes"  >Enviar</button>
         </div>
         </div>
       </div>
@@ -229,5 +230,11 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+    <script >
+      $(function(){
+          $("[data-toggle='tooltip']").tooltip();
+          $('[data-toggle="popover"]').popover();
+      });
+    </script>
   </body>
 </html>
