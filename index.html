@@ -202,7 +202,7 @@
           <img class="card-img-top img-fluid" src="images/contacto.png" alt="Banner imagen" >
 
           <h4 class="card-title" data-toggle="popover" data-placement="auto" title="Puedes dejarnos tu mensaje y tu correo para que te contactemos."><p>Contactenos</p></h4>
-          <div> <a class="btn  btn-primary btn-iniciar" role="button" data-toggle="modal" data-target="#contacto">Aquí</a></div>
+          <div> <a class="btn  btn-primary btn-iniciar" role="button" data-toggle="modal" id="btn-contact" data-target="#contacto">Aquí</a></div>
         </div>
       </div>
   </div>
@@ -260,14 +260,31 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+    
     <script >
       $(function(){
           $("[data-toggle='tooltip']").tooltip();
           $('[data-toggle="popover"]').popover();
           $('.carousel').carousel({
           interval: 2000
+            });
+            $('#contacto').on('show.bs.modal', function (e) {
+                console.log('El modal se esta mostrando');
+                $('#btn-contact').removeClass('btn-primary');
+                $('#btn-contact').addClass('btn-outline-success');
+               
+            });
+            $('#contacto').on('shown.bs.modal', function (e) {
+                console.log('El modal se esta mostrando');
+            });
+            $('#contacto').on('hide.bs.modal', function (e) {
+                console.log('El modal se oculta');
+            });
+            $('#contacto').on('hidden.bs.modal', function (e) {
+                console.log('El modal se oculto');
+                $('#btn-contact').prop('disabled', ture);
             });
           });
     </script>
