@@ -1,0 +1,43 @@
+.jumbotron {
+  background-color: red;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+footer {
+  padding: 10px 10px 0 10px;
+  background-color: red;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.card-curso {
+  flex: 1 200px;
+  /* padding: 2px  0px 2px px; */
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.btn-iniciar {
+  width: 100%;
+  border-radius: 0px;
+}
+.btn-infoaqui {
+  width: 100%;
+}
+.footer-addres-icon {
+  padding-right: 10px;
+}
+.card-img-banner {
+  width: 30%;
+  height: 60%;
+  display: block;
+  margin: auto;
+}
+.card-img-top {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: auto;
+}
+.tab-content {
+  padding-top: 10px;
+}
