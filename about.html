@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  <!--Diseño responsive de la página--> 
 
     <!-- Bootstrap CSS -->
+    <!--build:css dist/about.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/main.css" >
-
+    <link rel="stylesheet" href="css/styles.css" >
+  <!--endbuild -->
     <title>¡Bienvenido, a un mooc!</title>
   </head>
   <body>
@@ -84,8 +85,12 @@
   </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+        <!--build:js dist/about.js -->
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+        <!--endbuild -->
+
   </body>
 </html>
