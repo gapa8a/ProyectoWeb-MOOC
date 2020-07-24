@@ -261,36 +261,10 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <!--build:js dist/index.js-->
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
-    
-    
-    <script >
-      $(function(){
-          $("[data-toggle='tooltip']").tooltip();
-          $('[data-toggle="popover"]').popover();
-          $('.carousel').carousel({
-          interval: 2000
-            });
-            $('#contacto').on('show.bs.modal', function (e) {
-                console.log('El modal se esta mostrando');
-                $('#btn-contact').removeClass('btn-primary');
-                $('#btn-contact').addClass('btn-outline-success');
-               
-            });
-            $('#contacto').on('shown.bs.modal', function (e) {
-                console.log('El modal se esta mostrando');
-            });
-            $('#contacto').on('hide.bs.modal', function (e) {
-                console.log('El modal se oculta');
-            });
-            $('#contacto').on('hidden.bs.modal', function (e) {
-                console.log('El modal se oculto');
-                $('#btn-contact').prop('disabled', ture);
-            });
-          });
-    </script>
+    <script src="js/index.js"></script>
     <!-- endbuild-->
   </body>
 </html>
