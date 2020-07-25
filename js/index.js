@@ -8,6 +8,7 @@ $(function(){
           console.log('El modal se esta mostrando');
           $('#btn-contact').removeClass('btn-primary');
           $('#btn-contact').addClass('btn-outline-success');
+           $('#btn-contacto').prop('disable',true);
          
       });
       $('#contacto').on('shown.bs.modal', function (e) {
@@ -18,6 +19,8 @@ $(function(){
       });
       $('#contacto').on('hidden.bs.modal', function (e) {
           console.log('El modal se oculto');
-          $('#btn-contact').prop('disabled', ture);
+          $('#btn-contact').prop('disabled', false);
+           $('#btn-contact').removeClass('btn-primary');
+             $('#btn-contact').addClass('btn-outline-success');
       });
     });
